@@ -1,0 +1,120 @@
+#login_page {
+    height: 80vh;
+    width: 100vw;
+    background-size: cover;
+    display: flex;
+}
+
+.tab_container {
+    width: 50vw;
+   
+    margin: auto;
+}
+
+.tab_container_button {
+    text-align: center;
+}
+
+.tab_button_login, .tab_button_signup {
+    padding: 0;
+    width: 10vw;
+    height: 5vh;
+    border: none;
+    font-family: var(--text-font-family);
+    color: var(--text-color);
+    font-size: 1.2em;
+    background-color: rgb(0,0,0, 0.5);
+}
+
+.tab_button_login:hover, .tab_button_signup:hover {
+    background-color: var(--background-reservation-bar);
+}
+
+.tab_button_login {
+    border-radius: 60% 0% 0% 0%;
+}
+.tab_button_signup {
+    border-radius: 0% 60% 0% 0%;
+}
+
+/* section de login */
+.tab_container_form {
+    height: 50vh;
+    background-color: rgb(0,0,0, 0.5);
+    border-radius: 10%;
+}
+
+.tab_container_form_login {
+    text-align: center;
+    border-radius: 10%;
+}
+.tab_container_form_login_title {
+    font-family: var(--text-font-family);
+    color: var(--text-color);
+    font-size: 2em;
+    padding: 1em 0;
+}
+
+.tab_container_form_login_div, .tab_container_form_signup_div {
+    width: 20vw;
+    margin: auto;
+}
+
+.tab_container_form_login_text {
+    text-align: justify;
+    font-family: var(--text-font-family);
+    color: var(--nav-bar-background);
+    font-size: 1.2em;
+    padding: 1vh 0;
+    text-shadow: 1px 1px 2px var(--text-shadow),
+    -1px 1px 2px var(--text-shadow),
+    -1px -1px 0 var(--text-shadow),
+    1px -1px 0 var(--text-shadow);
+}
+
+#tab_container_form_login_email, #tab_container_form_login_password {
+    width: 20vw;
+}
+
+#tab_container_form_button {
+    font-family: var(--text-font-family);
+    font-size: 1.1em;
+    color: var(--text-color);
+    margin-top: 2vh;
+    margin-left: 30%;
+}
+
+/* section de cadastro */
+
+.tab_container_form_signup {
+    text-align: center;
+    width: 50vw;
+}
+
+.tab_container_form_signup_div {
+    width: 50vw;
+    display: flex;
+    justify-content:end;
+    margin: 3% 0;
+    align-items: center;
+}
+
+.tab_container_form_signup_text {
+    font-family: var(--text-font-family);
+    color: var(--nav-bar-background);
+    font-size: 1.1em;
+    text-shadow: 1px 1px 2px var(--text-shadow),
+    -1px 1px 2px var(--text-shadow),
+    -1px -1px 0 var(--text-shadow),
+    1px -1px 0 var(--text-shadow);
+    margin-right: 1vw;
+}
+#tab_container_form_signup_name {
+    height: 1.3em;
+    width: 30vw;
+    margin-right: 10vw;
+}
+
+#tab_container_form_signup_date {
+    margin-right: 10vw;
+}

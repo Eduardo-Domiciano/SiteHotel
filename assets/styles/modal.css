@@ -1,0 +1,141 @@
+
+/* Predefinições do modal*/
+.modal_window {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgb(0,0,0,0.5);
+}
+
+.modal_contain {
+    background-color: var(--address-background);
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Definições do conteudo interno do modal */
+
+.modal_reservation {
+    text-align: center;
+    border: solid 3px var(--text-color);
+    width: 80vw;
+}
+
+.modal_reservation_selection {
+    width: 80vw;
+}
+
+.modal_reservation_selection_cliet_info_div {
+    display: flex;
+    justify-content:first baseline;
+    margin: 2vh 0;
+    flex-wrap: wrap;
+}
+
+
+.modal_reservation_selection_client_info {
+    display: flex;
+    margin: 2vh 2vw;
+}
+
+.modal_reservation_selection_client_name {
+    color: var(--text-color);
+    margin: 0 1vw;
+}
+
+#modal_reservation_selection_client_name_input {
+    width: 40vw;
+}
+
+#modal_reservation_selection_client_email_input {
+    width: 30vw;
+}
+
+.modal_reservation_selection_room_select {
+    margin: 1vh 0;
+}
+
+/* Definições dos modelos de quartos adicionados */
+
+.modal_reservation_room_model {
+    background-color: rgb(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    margin: 2vh 1vw;
+    
+}
+
+.modal_reservation_class_room {
+    
+    border: solid 3px var(--text-color);
+    width: 25vw; 
+}
+
+.modal_reservation_model_title_div {
+    margin: 1vh 0;
+}
+
+.modal_reservation_model_img_div, .modal_reservation_model_room_info, .modal_reservation_model_room_selected {
+    display: flex;
+    justify-content: center;
+    margin: 1vh 0;
+}
+
+.room_div_text_modal {
+    color: var(--nav-bar-background);
+    word-wrap: normal;
+}
+
+.modal_reservation_model_room_selected {
+    flex-wrap: wrap;
+}
+
+.modal_reservation_model_room_selected_client {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#Modal_number_adult, #Modal_number_child {
+    margin: 1vh 1vw;
+    width: 3vw;
+}
+
+.close_button {
+    margin-right: 0;
+    width: 3vw;
+    height: 4.5vh;
+}
+
+.modal_reservation_info_hotel {
+   margin: 1.5vh 1vw;
+}
+
+.reservation_info_hotel {
+    color: var(--nav-bar-background);
+    text-align: justify;
+    font-size: 10px;
+}
+
+/* definições das informações finais do modal */
+
+.modal_reservation_info_end {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal_reservation_info_end {
+    margin: 1vh 1vw;
+}

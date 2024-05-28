@@ -1,0 +1,54 @@
+
+.div_footer {
+    width: 13vw;
+    text-align: center;
+    height: 30vh;
+}
+
+.copyright_info {
+    text-align: center;
+    width: 25vw;
+}
+
+.social_media {
+    display: flex;
+    justify-content: space-evenly;
+    height: 5vh;
+}
+
+.social_media_icon {
+    height: 1.5em;
+    padding: 1em 1em;
+}
+.social_media_icon:hover {
+    height: 3vh;
+}
+.footer_link_title, .contact_title{
+    font-family: 'Bilbo Swash Caps', cursive;
+    padding: 1vh 0;
+    font-size: 1.5em;
+    color: aliceblue;
+    text-shadow: 1px 1px 5px var(--text-shadow),
+    -1px 1px 5px var(--text-shadow),
+    -1px -1px 0 var(--text-shadow),
+    1px -1px 0 var(--text-shadow);
+}
+
+.footer_link {
+    text-decoration: none;
+    font-family: 'Caveat', cursive;
+    color: black;
+    display: block;  
+}
+
+.contact_info, .copy_link {
+    font-family: 'Caveat', cursive;
+}
+
+.contact_info:hover, .footer_link:hover {
+    color: aliceblue;
+    text-shadow: 1px 1px 5px var(--text-shadow),
+    -1px 1px 5px var(--text-shadow),
+    -1px -1px 0 var(--text-shadow),
+    1px -1px 0 var(--text-shadow);
+}

@@ -1,0 +1,39 @@
+
+.reservation_bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--background-reservation-bar);
+    width: 100vw;
+    height: 5vh;
+    border: solid 2px var(--text-shadow);
+    border-radius: 5px;
+}
+
+.reservation_div, .reservation_div1, .reservation_div2, .reservation_div3 {
+    display: flex;
+    align-items: center;
+}
+
+.reservation_number {
+    width: 5vw;
+}
+
+.reservation_link {
+    font-family: var(--text-font-family);
+    margin-right: 2vw;
+    color: var(--text-shadow);
+}
+.reservation_button, .modal_content_div_models_rooms_button {
+    font-family: var(--text-font-family);
+    margin-right: 2vw;
+    font-weight:1000;
+    color: var(--text-shadow);
+    border-radius: 5px;
+    
+}
+.reservation_button:hover, .modal_content_div_models_rooms_button:hover {
+    background-color: var(--text-color);
+    color: var(--nav-bar-background);
+}
+

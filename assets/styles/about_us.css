@@ -1,0 +1,125 @@
+
+/* >>>>>>>>>>> HEADER ABOUT */
+
+.about_us_page {
+    height: 250vh;
+}
+
+.header_about {
+    background-image: url('/assets/img/header_background.jpg');
+    width: 100vw;
+    height: 30vh;
+    position: relative;
+    background-position: center;
+}
+
+.hotel_name_about {
+    font-family: var(--title-font-family);
+    font-size: 9em;
+    width: 100vw;
+    text-align: center;
+    align-items: center;
+    padding-top: 10vh;
+    text-shadow: 1px 1px 6px var(--nav-bar-background),
+    -1px 1px 6px var(--nav-bar-background),
+    -1px -1px 6px var(--nav-bar-background),
+    1px -1px 6px var(--nav-bar-background);
+}
+/* >>>>>>>>>>> FIM HEADER ABOUT*/
+
+
+
+/* >>>>>>>>>>> ABOUT INFO */
+
+#main_about {
+    width: 100vw;
+    height: 140vh;
+}
+
+.about_info {
+    padding-top: 5vh;
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: var(--background-about-us);
+}
+
+.about_img, .about_img_2 {
+    height: 35vh;
+    position: relative;
+}
+
+.about_img {
+    margin-right: 30vw;
+}
+
+.about_img_2 {
+    margin-left: 30vw;
+}
+
+.about_info_div, .about_info_div_2 {
+    width: 40vw;
+    text-align: justify;
+    position: absolute;
+    background-color: var(--background-about-us);
+    padding: 2%;
+}
+
+.about_info_div {
+    margin-left: 30vw;
+}
+
+.about_info_div_2 {
+    margin-right: 30vw;
+}
+
+.about_info_div_title {
+    font-family: var(--text-font-family);
+    margin-bottom: 1em;
+    
+}
+
+.about_info_div_paragraph {
+    font-family: var(--text-font-family);
+    color: white;
+}
+/* >>>>>>>>>>> ABOUT INFO */
+
+
+
+/* >>>>>>>>>>> ABOUT AMENITIES */
+.about_amenities {
+    width: 100vw;
+    height: 25vh;
+    text-align: center;
+    background-color: var(--background-about-us);
+}
+
+.about_amenities_title {
+    font-family: var(--text-font-family);
+    padding-top: 1em;
+}
+
+.about_amenities_div {
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about_amenities_div_icon {
+    width: 10vw;
+    text-align:center;
+}
+
+.about_amenities_icon {
+    height: 4vh;
+}
+
+.about_icon_text {
+    text-align: center;
+    word-wrap:normal;
+}
+/* >>>>>>>>>>> ABOUT AMENITIES */

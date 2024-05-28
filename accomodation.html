@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garbage's Hotel</title>
+    <link rel="stylesheet" href="/assets/styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles/style.css">
+</head>
+<body class="about_us_page">
+    <header>
+        <section class="header_about">
+            <h1 class="hotel_name_about">Garbage's Hotel</h1>
+        </section>
+    </header>
+
+    <!-- Navegation bar  -->
+    <nav class="navegation_bar">
+        <!-- Aqui será gerada a barra de navegação -->
+    </nav>
+
+    <!-- Main content-->
+    <main id="rooms_page">
+        <h1 class="title_div">Conheça nossas acomodações:</h1>
+
+        <section class="all_rooms">
+            <!-- Os modelos de quartos aparecerão aqui! -->
+        </section>
+
+        <section class="meeting_reservation">
+            <div class="form_meeting">
+                <h1 class="form_meeting_title">Reuniões/Eventos</h1>
+                <section class="slider_form">
+                        <div class="event_div">
+                            <h1 class="event_type_title">Tipo de Evento:</h1>
+                            <select class="event_type_selector" name="select_event" id="">
+                                <option class="event_type_option" value="Cerimonia"></option>
+                                <option class="event_type_option" value="Cerimonia">Cerimonia</option>
+                                <option class="event_type_option" value="Reunião">Reunião</option>
+                            </select>
+                        </div>
+                        <div class="event_div">
+                            <h1 class="quantity_rooms_title">Nome:</h1>
+                            <input class="event_input_selector_text" type="text" name="Numero" >
+                        </div><div class="event_div">
+                            <h1 class="quantity_rooms_title">Email:</h1>
+                            <input class="event_input_selector_text" type="email" name="email" id="">
+                        </div>
+                        <div class="event_div">
+                            <h1 class="quantity_rooms_title">Telefone:</h1>
+                            <input class="event_input_selector_number" type="tel" name="telefone" id="">
+                        </div>
+                        <div class="event_div">
+                            <h1 class="quantity_rooms_title">Quantidade de Salas:</h1>
+                            <input class="event_input_selector_number" type="number" name="Numero" value="0" min="0" max="2">
+                        </div>
+                        <div class="event_div">
+                            <h1 class="quantity_people_title">Quantidade de Pessoas:</h1>
+                            <input class="event_input_selector_number" type="number" name="number" value="0" min="0" max="150">
+                        </div>
+                        <div class="event_div">
+                            <h1 class="event_date_title">Data do evento:</h1>
+                            <input class="event_date_time" type="datetime-local" name="" id="">
+                        </div>
+                        <div class="event_div">
+                            <h1 class="event_lunch_title">Café e lanche</h1>
+                            <input class="event_lunch_checkbox" type="checkbox" name="almoço" id="">
+                            <h1 class="event_lunch_title">Almoço</h1>
+                            <input class="event_lunch_checkbox" type="checkbox" name="almoço" id="">
+                            <h1 class="event_lunch_title">Jantar</h1>
+                            <input class="event_lunch_checkbox" type="checkbox" name="almoço" id="">
+                        </div>
+                        
+                        <button class="reservation_button" type="submit">Pedir Orçamento</button>                    
+                </section>
+            </div>
+            <div class="wallpaper_slider">
+                <img src="/assets/img/img_slider/sala_reuniao02.jpg" alt="image slider" class="slider_img">
+                <img src="/assets/img/img_slider/sala_reuniao01.jpg" alt="image slider" class="slider_img">
+                <img src="/assets/img/img_slider/sala_reuniao03.jpg" alt="image slider" class="slider_img">
+                <img src="/assets/img/img_slider/sala_reuniao04.jpg" alt="image slider" class="slider_img">
+                <img src="/assets/img/img_slider/sala_reuniao05.jpg" alt="image slider" class="slider_img">
+                <img src="/assets/img/img_slider/sala_reuniao06.jpg" alt="image slider" class="slider_img">
+                <img src="/assets/img/img_slider/sala_reuniao07.jpg" alt="image slider" class="slider_img">
+                <img src="/assets/img/img_slider/sala_reuniao08.jpg" alt="image slider" class="slider_img">
+                <img src="/assets/img/img_slider/sala_reuniao09.jpg" alt="image slider" class="slider_img">
+                <img src="/assets/img/img_slider/sala_reuniao10.jpg" alt="image slider" class="slider_img">
+                
+                
+            </div>
+        </section>
+    </main>
+    <!-- Modal é a janela de sobreposição para reservas-->
+    <section class="modal_window">
+        <div class="modal_contain">
+            <!-- Conteudo da modal será gerado aqui-->
+        </div>
+    </section>
+    
+    <!-- Footer for all the pages-->
+    <footer class="footer">
+        <!-- Aqui é gerada o rodapé das paginas -->
+    </footer>
+    
+    <script type="module" src="./js/accomodation.js"></script>
+</body>
+</html>

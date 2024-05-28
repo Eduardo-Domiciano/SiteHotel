@@ -1,0 +1,56 @@
+#career_container {
+    background-color: var(--background-about-us);
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.career_form {
+    background-color: var(--nav-bar-background);
+    width: 100vw;
+    height: 60vh;
+    text-align: center;
+}
+
+.career_form_title {
+    font-family: var(--text-font-family);
+    font-size: 1.5em;
+    margin: 3vh 0;
+}
+
+.carrer_form_search {
+    display: flex;
+    justify-content: center;
+}
+
+.carrer_form_search_title {
+    font-family: var(--text-font-family);
+    margin: 0 3vw;
+}
+
+/* Form Employee*/
+
+.carrer_form_employee {
+    height: 30vh;
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.carrer_form_employee_div {
+    display: flex;
+    align-items: center;
+    margin: 1vh 0;
+}
+
+.carrer_form_employee_div_title {
+    margin: 1vh 2vw;
+    font-family: var(--text-font-family);
+}
+
+.carrer_form_employee_input_text {
+    width: 40vw;
+}

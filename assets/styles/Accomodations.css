@@ -1,0 +1,251 @@
+
+/* >>>>>>>>>>> ACOMODATION LIST */
+#rooms_page {
+    width: 100vw;
+    text-align: center;
+    background-color: var(--background-about-us);
+}
+.title_div {
+    font-family: var(--text-font-family);
+    font-size: 1.5em;
+    padding: 2em;
+    text-shadow: 1px 1px 2px var(--nav-bar-background),
+    -1px 1px 2px var(--nav-bar-background),
+    -1px -1px 0 var(--nav-bar-background),
+    1px -1px 0 var(--nav-bar-background);
+}
+
+.all_rooms {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 5vw 5vw 20vh 0;
+}
+
+.roomBox0, .roomBox1, .roomBox2, .roomBox3, .roomBox4, .roomBox5 {
+    margin: 1vh 0 15vh 0;
+}
+.room_div0, .room_div1, .room_div2, .room_div3, .room_div4, .room_div5{
+    width: 20vw;
+    height: 25vh;
+    background-color: var(--address-background);
+    border: solid 2px var(--text-shadow);
+    border-radius: 10% 20%;
+    text-align: center;
+    box-shadow: 3px 3px 20px var(--address-background),
+    -3px -3px 20px var(--address-background);
+    background-position: center;
+    margin: 1vh 4vw 15vh 15vw;
+    min-width: 18vw;
+}
+
+.room_div0:hover, .room_div1:hover, .room_div2:hover, .room_div3:hover, .room_div4:hover, .room_div5:hover {
+    transform: perspective(10cm) rotateX(5deg) rotate(-5deg) rotateY(8deg);
+    box-shadow: 3px 3px 20px var(--text-shadow),
+    -3px -3px 20px var(--text-shadow);
+    transition: all 0.5s ease;
+    width: 19vw;
+}
+
+.room_div_title {
+    font-family: var(--text-font-family);
+    padding: 0.5em 0;
+    color: var(--text-color);
+}
+
+.room_div_text {
+    width: 20vw;
+    height: 5vh;
+    flex-wrap: wrap;
+    font-size: -1em;
+    font-family: var(--text-font-family);
+    font-size: small;
+    color: var(--main-background);
+    margin: 0 0 2vh 0;
+}
+
+.room_div_img_div0, .room_div_img_div1, .room_div_img_div2, .room_div_img_div3, .room_div_img_div4, .room_div_img_div5 {
+    display: flex;
+}
+
+.room_div_price {
+    width: 20vw;
+    color: var(--addresstext-color);
+    background-color: var(--address-background);
+    position:absolute;
+    text-align: center;
+    text-shadow: 1px 1px 2px var(--text-shadow),
+    -1px 1px 2px var(--text-shadow),
+    -1px -1px 0 var(--text-shadow),
+    1px -1px 0 var(--text-shadow);
+    align-self:self-end;
+}
+
+.room_div_img {
+    width: 20vw;
+    border-radius: 15px;
+    box-shadow: -1px 1px 5px black;
+    position: relative;
+    min-width: 18vw;
+}
+
+
+/* Reservation div of accomodation */
+
+.room_div_reservation0, .room_div_reservation1, .room_div_reservation2, .room_div_reservation3, .room_div_reservation4, .room_div_reservation5 {
+    background-color: var(--address-background);
+    height: 10vh;
+    border: solid 2px var(--text-shadow);
+    border-radius: 20% 10%;
+    width: 20vw;
+    flex-wrap: wrap;  
+    font-size: 0.8em;
+    visibility: hidden;
+}
+
+.room_div0:hover .room_div_reservation0, .room_div1:hover .room_div_reservation1, .room_div2:hover .room_div_reservation2, .room_div3:hover .room_div_reservation3, .room_div4:hover .room_div_reservation4, .room_div5:hover .room_div_reservation5 {
+    visibility: visible;
+}
+
+.Reservation_hide_container0, .Reservation_hide_container1, .Reservation_hide_container2, .Reservation_hide_container3, .Reservation_hide_container4, .Reservation_hide_container5 {
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10vh;
+    width: 20vw;
+    flex-wrap: wrap;
+}
+
+.Reservation_hide_container_adults0, .Reservation_hide_container_adults1, .Reservation_hide_container_adults2, .Reservation_hide_container_adults3, .Reservation_hide_container_adults4, .Reservation_hide_container_adults5,  .Reservation_hide_container_kids0, .Reservation_hide_container_kids1, .Reservation_hide_container_kids2, .Reservation_hide_container_kids3, .Reservation_hide_container_kids4, .Reservation_hide_container_kids5{
+    display: flex;
+    align-items: center;
+    justify-items: auto;
+}
+
+.room_reservation_title {
+    color: var(--text-color);
+}
+
+.acomodation_room_input, .acomodation_room_adult_input {
+    width: 3vw;
+    height: 1.5vh;
+    text-align: center;
+    margin: 2%;
+}
+
+.acomodation_room_button {
+    color: var(--text-color);
+    height: 2.2vh;
+}
+.acomodation_room_button:hover {
+    background-color: var(--text-color);
+    color: var(--nav-bar-background);
+}
+
+/* >>>>>>>>>>> ACOMODATION LIST */
+
+
+
+
+/* >>>>>>>>>>> SLIDER ACOMODATION */
+
+.meeting_reservation {
+    display: flex;
+    align-items: center;
+    margin-top: 10vh;
+    filter: drop-shadow(0px 0px 10px #000);
+    overflow: hidden;
+    width: 100vw;
+    height: 70vh;
+    background-color: #1a1a1a;
+}
+
+ /* Area do slider*/
+.wallpaper_slider {
+    display: flex;
+    transition: 0.7s ease-in-out;
+    transform: translateX(0);
+    text-align: center;
+}
+/* imagens do Slider*/
+.slider_img {
+    position: relative;
+    text-align: center;
+    align-items: center;
+    width: 100vw;
+    height: 60vh;
+    image-resolution: auto;
+    margin: auto auto;
+}
+/* Area de Formulario do Slider*/
+.form_meeting {
+    position: absolute;
+    width: 100vw;
+    height: 70vh;
+    float: inline-start;
+    color: white;
+    align-items: center;
+    background-color: rgb(26, 26, 26, 0.5);
+    z-index: -1;
+}
+
+.meeting_reservation:hover .form_meeting {
+    z-index: 1;
+    transition: 0.3s;
+}
+
+/* Slider Form */
+.slider_form {
+    width: 80vw;
+    height: 80vh;
+    align-items: center;
+    color: var(--nav-bar-background);
+    text-shadow: 1px 1px 5px var(--text-color),
+                -1px 1px 5px var(--text-color),
+                -1px -1px 0 var(--text-color),
+                 1px -1px 0 var(--text-color);
+    height: 35vh;
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-end;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.form_meeting_title {
+    font-family: var(--text-font-family);
+    color: black;
+    font-size: 1.5em;
+    margin-top: 2.5em;
+    text-shadow: 1px 1px 5px var(--nav-bar-background),
+                -1px 1px 5px var(--nav-bar-background),
+                -1px -1px 0 var(--nav-bar-background),
+                 1px -1px 0 var(--nav-bar-background);
+}
+
+/* event_type Form*/
+.event_type {
+    display: flex;
+    align-items: center;
+}
+
+.event_input_selector_text, .event_input_selector_number{
+    margin: 0 1vw;
+    height: 2vh;
+}
+
+.event_input_selector_text {
+    width: 30vw;
+}
+
+.event_div {
+    display: flex;
+    align-items: center;
+    margin: 0 2vw;
+}
+
+.event_date_time, .event_lunch_checkbox {
+    margin: 0 1vw;
+}
+
+/* >>>>>>>>>>> SLIDER ACOMODATION */

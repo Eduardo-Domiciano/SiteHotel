@@ -1,0 +1,65 @@
+@import url("header.css");
+@import url("nav_bar.css");
+@import url("footer.css");
+@import url("reservation_bar.css");
+@import url("about_us.css");
+@import url("about_info.css");
+@import url("about_amenities.css");
+@import url("Accomodations.css");
+@import url("slider.css");
+@import url("career.css");
+@import url("login.css");
+@import url("modal.css");
+
+
+:root {
+    --main-background: #D3D5D8;
+    --addresstext-color:#FFFFFF;
+    --text-shadow: #DC4400;
+    --title-font-family: 'Bilbo Swash Caps', cursive;
+    --address-background: rgb(0 0 0 / 0.45);
+    --text-font-family: 'Caveat', cursive;
+    --text-color: #DC4400;
+    --nav-bar-background: #ffece3;
+    --background-reservation-bar: rgb(53, 44, 44);
+    --background-about-us: #b96944;
+    --background-footer: #ca6f45;
+}
+/* We have info here that cannot be changed*/
+/* The componentes of the sections, have their on file */
+body {
+    font-family: 'Caveat', cursive;
+    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Share Tech', sans-serif;
+    background-color: var(--background-footer);
+    display: block;
+    width: 100vw;
+    overflow-x: hidden;
+    
+}
+
+.nav_bar {
+    height: 5vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    position:relative;
+    
+
+}
+
+footer {
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5vh;
+    background-color: var(--background-footer);
+}
+
+.reservation {
+    position: fixed;
+    bottom: 0;
+}

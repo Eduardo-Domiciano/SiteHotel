@@ -1,0 +1,177 @@
+
+/* >>>>>>>>>>> HEADER */
+
+.home_page {
+    height: 220vh;
+}
+
+.header_home_page {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.header_banner {
+    animation: header_banner 60s linear infinite;
+    background-image: url('/assets/img/header_background.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    scale: 1;
+    position: relative;
+    /*for some reason, needs to width here to image works*/
+    /*i still don't see why*/
+    width: 100vw;
+    z-index: -1;
+}
+
+@keyframes header_banner {
+    100% {
+        scale: 1.6;
+      }
+}
+
+.contact_icon {
+    height: 1.5vh;
+}
+
+.address-container{
+    width: 100vw;
+    height: 5vh;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+    position: absolute;
+    text-align: center;
+    background-color: var(--address-background);
+    font-size: 12px;
+}
+
+.address {
+    align-items: center;
+    color: var(--text-color);
+    text-shadow: 1px 1px 2px var(--text-shadow),
+    -1px 1px 2px var(--text-shadow),
+    -1px -1px 0 var(--text-shadow),
+    1px -1px 0 var(--text-shadow);
+}
+
+.address_contact {
+    padding: 10px;
+    color: var(--nav-bar-background);
+}
+
+.hotel_name {
+    font-family: var(--title-font-family);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    align-items: center;
+    font-size: 9em;
+    text-shadow: 1px 1px 6px var(--nav-bar-background),
+    -1px 1px 6px var(--nav-bar-background),
+    -1px -1px 6px var(--nav-bar-background),
+    1px -1px 6px var(--nav-bar-background);
+}
+
+.hotel_slogan {
+    margin-top: 100px;
+    font-family: var(--title-font-family);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    align-items: center;
+    font-size: 3em;
+    text-shadow: 1px 1px 8px var(--text-shadow),
+    -1px 1px 8px var(--text-shadow),
+    -1px -1px 8px var(--text-shadow),
+    1px -1px 8px var(--text-shadow);
+};
+/* >>>>>>>>>>> FIM HEADER */
+
+
+
+
+
+
+
+/* >>>>>>>>>>> APRESENTATION */
+
+#presentation_container {
+    /* This margin top have the same height of nav_bar */
+    /* To not hide it*/
+    width: 100vw;
+    position:relative;
+    background-color: var(--nav-bar-background);
+}
+
+.presentation_section{
+    background-image: linear-gradient(#d3784d, #ffece3, #ffece3, #ffece3, #d3784d);
+}
+.presentation {
+    width: cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.presentation_div {
+    height: 70vh;
+}
+
+.presentation_title {
+    font-family: 'Caveat', cursive;
+    font-size: 1.5em;
+    transform: rotate(180deg);
+    text-align: center;
+    align-items: center;
+    height: 25vh;
+    writing-mode: vertical-lr;
+    text-shadow: 1px 1px 5px var(--text-shadow),
+                -1px 1px 5px var(--text-shadow),
+                -1px -1px 0 var(--text-shadow),
+                1px -1px 0 var(--text-shadow);
+    margin-left: 50%;
+}
+
+.presentation_img {
+    height: 40vh;
+    width: 5vw;
+    border: 3px solid;
+    border-radius: 50px;
+    object-fit: cover;
+    transition: width 1.5s;
+}
+
+.presentation_img:active {
+    width: 50vw;
+    text-align: center;
+}
+
+.messege {
+    width: 100vw;
+    text-align: center;
+    padding-bottom: 3vh;
+    
+}
+
+.messege_phrase, .messege_title {
+    font-family: 'Bilbo Swash Caps', cursive;
+    color: aliceblue;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 15px var(--text-shadow),
+    -1px 1px 15px var(--text-shadow),
+    -1px -1px 0 var(--text-shadow),
+    1px -1px 0 var(--text-shadow);
+}
+.messege_title {
+    color: black;
+}
+/* >>>>>>>>>>> FIM APRESENTATION */

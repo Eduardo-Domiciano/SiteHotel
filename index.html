@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garbage's Hotel</title>
+    <link rel="stylesheet" href="/assets/styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles/style.css">
+</head>
+<body class="home_page">
+    <header class="header_home_page">
+        <!-- Header Banner-->
+        <img class="header_banner">
+        <!-- Header sociel media-->
+        <div class="address-container">
+            <div class="address">
+                <img class="contact_icon" src="/assets/img/phone.png" alt=""><span class="address_contact">(00) 1234-5678</span>
+                <img class="contact_icon" src="/assets/img/whats.svg" alt=""><span class="address_contact">(00) 9876-5432</span>
+            </div>
+            <div class="address">
+                <img class="contact_icon" src="/assets/img/mail.svg" alt=""><span class="address_contact">comercial@garbageshotel.com.br</span>
+            </div>
+            <div class="address">
+                <img class="contact_icon" src="/assets/img/address.png" alt=""><span class="address_contact">Av. ET de Varginha, 01 - Varginha/MG </span>
+            </div>
+        </div>
+
+        <div class="hotel_name">Garbage's Hotel <br> </div>
+        <div class="hotel_slogan">"O unico lugar onde você merece estar!"</div>
+    </header>
+
+    <!-- Navegation bar -->
+    <nav class="navegation_bar">
+        <!-- Aqui será gerada a barra de navegação -->
+    </nav>
+
+    <!-- Main content-->
+    <main id="presentation_container">       
+        <section class="presentation_section">
+           <section class="presentation">
+            <div class="presentation_div">
+                <h1 class="presentation_title">Elegancia</h1><img class="presentation_img" src="/assets/img/Elegancia.jpg" alt="">
+            </div>
+            <div class="presentation_div">
+                <h1 class="presentation_title">Modernidade</h1><img class="presentation_img" src="/assets/img/Modernidade.jpg" alt="">
+            </div>
+            <div class="presentation_div">
+                <h1 class="presentation_title">Requinte</h1><img class="presentation_img" src="/assets/img/Requinte.jpg" alt="">
+            </div>
+            <div class="presentation_div">
+                <h1 class="presentation_title">Conforto</h1><img class="presentation_img" src="/assets/img/Conforto.jpg" alt="">
+            </div>
+            <div class="presentation_div">
+                <h1 class="presentation_title">Comprometimento</h1><img class="presentation_img" src="/assets/img/Comprometimento.jpg" alt="">
+            </div>
+            <div class="presentation_div">
+                <h1 class="presentation_title">Classe</h1><img class="presentation_img" src="/assets/img/Classe.jpg" alt="">
+            </div>
+            <div class="presentation_div">
+                <h1 class="presentation_title">Comodidade</h1><img class="presentation_img" src="/assets/img/Comodidade.jpg" alt="">
+            </div>
+            <div class="presentation_div">
+                <h1 class="presentation_title">Exuberância</h1><img class="presentation_img" src="/assets/img/Exuberancia.jpg" alt="">
+            </div>
+            <div class="presentation_div">
+                <h1 class="presentation_title">Qualidade</h1><img class="presentation_img" src="/assets/img/Qualidade.jpg" alt="">
+            </div>
+           </section> 
+            <!-- The messege style  is in presentation.css file-->
+            <section class="messege">
+                <h1 class="messege_title">Garbage's Hotel</h1>
+                <p class="messege_phrase">O mesmo conceito de hotelaria em uma nova perspectiva!</p>
+            </section>
+        </section>        
+    </main>
+    <!-- Modal é a janela de sobreposição para reservas-->
+    <diolog class="modal_window">
+        <section class="modal_contain">
+            <!-- Conteudo da modal será gerado aqui-->
+            <section class="modal_reservation">
+                <section class="modal_reservation_selection">
+                    <div class="modal_reservation_selection_title_div">
+                        <h1 class="messege_phrase">Reserve agora!</h1>
+                    </div>
+                    <div class="modal_reservation_selection_cliet_info_div">
+                        <div class="modal_reservation_selection_client_info">
+                            <h2 class="modal_reservation_selection_client_name">Nome: </h2>
+                            <input type="text" name="Name" id="modal_reservation_selection_client_name_input">
+                        </div>
+                        <div class="modal_reservation_selection_client_info">
+                            <h2 class="modal_reservation_selection_client_name">Telefone: </h2>
+                            <input type="tel" name="Tel" id="modal_reservation_selection_client_tell_input">
+                        </div>
+                        <div class="modal_reservation_selection_client_info">
+                            <h2 class="modal_reservation_selection_client_name">Email: </h2>
+                            <input type="email" name="Email" id="modal_reservation_selection_client_email_input">
+                        </div>
+                    </div>
+                    <div class="modal_reservation_selection_room_select">
+                        <button class="reservation_button" type="submit">Express Duplo</button>
+                        <button class="reservation_button" type="submit">Express Triplo</button>
+                        <button class="reservation_button" type="submit">Luxo Casal</button>
+                        <button class="reservation_button" type="submit">Luxo Familia</button>
+                        <button class="reservation_button" type="submit">Flat</button>
+                        <button class="reservation_button" type="submit">Master</button>
+                    </div>
+                </section>
+                <section class="modal_reservation_room_model">
+                    <!-- Aqui aparecerá os modelos de quartos selecionados-->
+                    <Section class="modal_reservation_class_room">
+                        <div class="modal_reservation_model_title_div">
+                            <h1 class="room_div_title">Express Duplo</h1>
+                        </div>
+                        <div class="modal_reservation_model_img_div">
+                            <img class="room_div_img" src="/assets/img/twin-bed.jpg" alt="" >
+                            <h2 class="room_div_price">De R$ 200,00 por apenas R$ 180,00</h2>
+                        </div>
+                        <div class="modal_reservation_model_room_info">
+                            <p class="room_div_text_modal">Modelo com 02 camas de solteiro, frigobar, tv e ar condicionado</p>
+                        </div>
+                        <div class="modal_reservation_model_room_selected">
+                            <div class="modal_reservation_model_room_selected_client">
+                                <h1 class="room_div_title">Adultos</h1>
+                                <input type="number" name="number" id="Modal_number_adult" value="1" min="1" max="2">
+                            </div>
+                            <div class="modal_reservation_model_room_selected_client">
+                                <h1 class="room_div_title">Crianças</h1>
+                                <input type="number" name="number" id="Modal_number_child" value="1" min="1" max="2">
+                            </div>
+                            <button class="reservation_button close_button" id="modal_delete_room" type="submit">X</button>
+                        </div>
+                    </Section>
+                </section>
+                <!-- Aqui são as informações finais das reservas-->
+                <section class="modal_reservation_info_hotel">
+                    <p class="reservation_info_hotel">#01. Reservas poderão ser canceladas em até 24hrs antes da data do check-in, caso passar da hora e data limite, será cobrado 50% do valor total da reserva.</p>
+                    <p class="reservation_info_hotel">#02. Qualquer reserva feita pelo site, somente terá validade mediante a apresentação da confirmação de reserva que será enviada por email.</p>
+                    <p class="reservation_info_hotel">#03. Crianças de até 05 anos são isentas de pagamento da hospedagem</p>
+                    <p class="reservation_info_hotel">#04. Reservas sem a garantia de No-show, serão canceladas automaticamente as 18h00 na data do Check-in.</p>
+                    <p class="reservation_info_hotel">#05. É obrigatório ter em mãos no ato do check-in, o documento com foto para adultos e/ou sertidão de nascimento no caso de crianças e adolecentes, sendo esses, aptos a se hospedarem apenas acompanhados de seus pais, avós ou um responsavel com um documento reconhecido em cartório.</p>
+                </section>
+                <section class="modal_reservation_info_end">
+                    <div class="modal_reservation_info_end">
+                        <h2 class="tab_container_form_login_text">Quantidade: 01</h2>
+                    </div>
+                    <div class="modal_reservation_info_end">
+                        <h2 class="tab_container_form_login_text">Valor total: R$180,00</h2>
+                    </div>
+                    <button class="reservation_button close_button" id="modal_close_button" type="submit">X</button>
+                </section>
+            </section>
+        </section>
+    </diolog>
+    
+    <!-- Footer for all the pages-->
+    <footer class="footer">
+        <!-- Aqui é gerada o rodapé das paginas -->
+    </footer>
+    
+    <section class="reservation">
+        <!-- Aqui será gerada a barra de reservas -->
+        
+    </section>
+    <script type="module" src="main.js"></script>
+</body>
+</html>

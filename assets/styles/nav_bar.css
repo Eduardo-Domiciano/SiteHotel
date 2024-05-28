@@ -1,0 +1,20 @@
+
+.nav_bar {
+    font-family: var(--text-font-family);
+    font-size: 1em;
+    background-color: var(--nav-bar-background);
+}
+
+.nav_button {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.nav_button:hover {
+    font-size: 1.1em;
+    color: var(--nav-bar-background);
+    text-shadow: 1px 1px 3px var(--text-shadow),
+    -1px 1px 3px var(--text-shadow),
+    -1px -1px 0 var(--text-shadow),
+    1px -1px 0 var(--text-shadow);
+}
