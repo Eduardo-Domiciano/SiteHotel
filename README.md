@@ -8,6 +8,4 @@ descidi fazer uma web page de um hotel ficticio para treinar meus conhecimantos 
 <p>Ainda não esta terminando, mas logo vai estar!</p>
 
 
-[ ] adicionar mais informações nas fotos de apresetações da pagina principal
-[ ] Corrigir os posicionamentos das entradas do fgormulario de reservas na pagina acomodações
-[ ] Fazer os botoes de reservas funcionarem
+Nesse repositório eu dou continuidade a um projeto de um site de apresentação e de reservas de um hotel. Eu perdi acesso a minha conta antiga, mas ele ainda pode ser acessado: https://github.com/DuDSTOPIA/Garbage-s-Hotel-Page
