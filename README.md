@@ -2,7 +2,9 @@
 
 Site de apresentação e reservas de um hotel fictício em Varginha/MG. Feito em Angular, com identidade visual de hotelaria (creme e terracota) e fluxo de reserva no próprio navegador.
 
-Demo: https://site-hotel-pi.vercel.app/
+Demo: https://site-hotel-sage.vercel.app/
+
+![hotel](public/mikhalateia-hotel.png)
 
 ## Features
 
