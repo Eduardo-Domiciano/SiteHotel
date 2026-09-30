@@ -30,6 +30,9 @@ yarn-error.log
 !.vscode/mcp.json
 .history/*
 
+# Cursor (local IDE config; not part of the repo)
+.cursor/
+
 # Miscellaneous
 /.angular/cache
 .sass-cache/
