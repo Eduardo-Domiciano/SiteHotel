@@ -2,7 +2,7 @@
 
 Site de **demonstração** (front Angular) de um hotel fictício em Varginha/MG. S quiser testar o projeto completo acesse [Site-Hotel-Completo](https://github.com/Eduardo-Domiciano/Site-Hotel-Completo)
 
-Demo: https://site-hotel-pi.vercel.app/
+Demo: https://site-hotel-p9iqw31h6-eduardo-domicianos-projects.vercel.app/
 
 Projeto completo (front + API + Docker): repositório `Site-Hotel-Completo`.
 
