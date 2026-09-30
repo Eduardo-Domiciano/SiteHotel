@@ -1,6 +1,6 @@
 # Mikhalateia Hotel
 
-Site de **demonstração** (front Angular) de um hotel fictício em Varginha/MG.
+Site de **demonstração** (front Angular) de um hotel fictício em Varginha/MG. S quiser testar o projeto completo acesse [Site-Hotel-Completo](https://github.com/Eduardo-Domiciano/Site-Hotel-Completo)
 
 Demo: https://site-hotel-pi.vercel.app/
 
