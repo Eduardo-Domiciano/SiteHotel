@@ -9,12 +9,25 @@
       </button>
     </div>
 
+    <p class="login__demo">
+      Demo — usuário:
+      <strong>{{ demoUser.name }}</strong>
+      ({{ demoUser.email }} / {{ demoUser.password }})
+    </p>
+
     @if (mode === 'login') {
       <form (ngSubmit)="submitLogin()">
         <h2>Login</h2>
         <label>
           E-mail
-          <input type="email" [(ngModel)]="login.email" name="loginEmail" autocomplete="email" />
+          <input
+            type="email"
+            [(ngModel)]="login.email"
+            name="loginEmail"
+            autocomplete="email"
+            [attr.maxlength]="maxLen"
+            required
+          />
         </label>
         <label>
           Senha
@@ -23,16 +36,25 @@
             [(ngModel)]="login.password"
             name="loginPassword"
             autocomplete="current-password"
+            [attr.maxlength]="maxLen"
+            required
           />
         </label>
-        <button type="submit" class="btn">Entrar</button>
+        <button type="submit" class="btn" [disabled]="busy">Entrar</button>
       </form>
     } @else {
       <form (ngSubmit)="submitSignup()">
         <h2>Cadastre-se</h2>
         <label>
           Nome
-          <input type="text" [(ngModel)]="signup.name" name="signupName" autocomplete="name" />
+          <input
+            type="text"
+            [(ngModel)]="signup.name"
+            name="signupName"
+            autocomplete="name"
+            [attr.maxlength]="maxLen"
+            required
+          />
         </label>
         <label>
           Data de nascimento
@@ -40,7 +62,14 @@
         </label>
         <label>
           E-mail
-          <input type="email" [(ngModel)]="signup.email" name="signupEmail" autocomplete="email" />
+          <input
+            type="email"
+            [(ngModel)]="signup.email"
+            name="signupEmail"
+            autocomplete="email"
+            [attr.maxlength]="maxLen"
+            required
+          />
         </label>
         <label>
           Senha
@@ -49,6 +78,9 @@
             [(ngModel)]="signup.password"
             name="signupPassword"
             autocomplete="new-password"
+            [attr.maxlength]="maxLen"
+            minlength="8"
+            required
           />
         </label>
         <label>
@@ -58,9 +90,11 @@
             [(ngModel)]="signup.confirm"
             name="signupConfirm"
             autocomplete="new-password"
+            [attr.maxlength]="maxLen"
+            required
           />
         </label>
-        <button type="submit" class="btn">Cadastrar</button>
+        <button type="submit" class="btn" [disabled]="busy">Cadastrar</button>
       </form>
     }
 

@@ -1,11 +1,11 @@
 ---
-description: Padrao de documentacao por pasta (docdir.md)
+description: Padrao global de documentacao por pasta (docdir.md)
 alwaysApply: true
 ---
 
 # Documentacao por pasta (`docdir.md`)
 
-Cada pasta do projeto que contenha codigo ou assets relevantes deve ter um arquivo `docdir.md`.
+Aplica-se a **todos** os projetos. Cada pasta com codigo ou assets relevantes deve ter um `docdir.md`.
 
 ## Objetivo
 
@@ -23,12 +23,36 @@ Explicar, em linguagem simples:
 - Cada subpasta tem o seu proprio `docdir.md`
 - Atualize o `docdir.md` ao criar, renomear, mover ou remover arquivos
 - Texto curto e direto; evite jargao desnecessario
-- Use o modelo em `docs/docdir.modelo.md`
+- Use o modelo em:
+  1. `docs/docdir.modelo.md` do projeto, se existir
+  2. Senao, `~/.cursor/templates/docdir.modelo.md`
+- Ao iniciar documentacao num projeto novo, copie o modelo global para `docs/docdir.modelo.md`
 
 ## Nao documentar
 
-- `node_modules/`
-- `dist/`
-- `.angular/`
-- `.git/`
-- arquivos gerados automaticamente (ex.: `package-lock.json`), a menos que a pasta exista so por causa deles
+- `node_modules/`, `dist/`, `.angular/`, `.git/`, `vendor/`, `__pycache__/`
+- Arquivos gerados automaticamente (ex.: `package-lock.json`, `go.sum`), a menos que a pasta exista so por causa deles
+
+## Estrutura do `docdir.md`
+
+```markdown
+# <nome-da-pasta>
+
+<Uma ou duas frases: o que esta pasta faz no projeto.>
+
+## Arquivos
+
+| Arquivo | O que faz |
+| --- | --- |
+| `arquivo.ext` | Frase curta: responsabilidade do arquivo. |
+
+## Subpastas
+
+| Pasta | O que guarda |
+| --- | --- |
+| `subpasta/` | Frase curta: o que vive nessa subpasta. |
+
+## Observacoes
+
+- Opcional. Apague a secao se nao houver.
+```

@@ -1,15 +1,17 @@
 # services
 
-Servicos Angular compartilhados (estado e regras de negocio no cliente).
+Servicos Angular compartilhados.
 
 ## Arquivos
 
 | Arquivo | O que faz |
 | --- | --- |
-| `reservation.ts` | Estado da reserva: datas, hospede, quartos selecionados, total e abertura do modal. |
+| `auth.ts` | Login/cadastro demo local (Cleare Redfield), perfil e logout via `localStorage`. |
+| `api.ts` | Cliente HTTP residual (quartos, reservas, eventos, candidaturas) — nao usado pelo fluxo demo principal. |
+| `reservation.ts` | Estado do modal de reserva e confirmacao local (sem POST). |
 | `docdir.md` | Documentacao desta pasta. |
 
 ## Observacoes
 
-- `ReservationService` e `providedIn: 'root'` e usado pela barra, pelo modal e pelas paginas.
-- Nao envia dados a um servidor; tudo fica na sessao do navegador.
+- Auth e reserva nao dependem do servidor neste projeto.
+- `ApiService` permanece para compatibilidade / orcamento de eventos em `/acomodacoes`.

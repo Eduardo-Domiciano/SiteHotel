@@ -1,12 +1,12 @@
 # SiteHotel
 
-Raiz do projeto Angular do Mikhalateia Hotel: site de apresentacao e reservas ficticias.
+Raiz do front Angular do Mikhalateia Hotel: site de demonstracao (sem backend obrigatorio).
 
 ## Arquivos
 
 | Arquivo | O que faz |
 | --- | --- |
-| `README.md` | Visao geral do projeto, features e como rodar. |
+| `README.md` | Visao geral, conta demo e como rodar. |
 | `package.json` | Dependencias npm e scripts (`start`, `build`, `test`). |
 | `package-lock.json` | Versoes travadas das dependencias. |
 | `angular.json` | Configuracao do Angular CLI (build, serve, assets). |
@@ -28,5 +28,6 @@ Raiz do projeto Angular do Mikhalateia Hotel: site de apresentacao e reservas fi
 
 ## Observacoes
 
+- Login, perfil, reserva e candidatura funcionam em modo demo local.
+- Stack completa (API + Postgres + Docker): repositorio `Site-Hotel-Completo`.
 - Nao documentar o conteudo de `node_modules/`, `dist/` ou `.git/`.
-- Cada subpasta relevante tem o seu proprio `docdir.md`.

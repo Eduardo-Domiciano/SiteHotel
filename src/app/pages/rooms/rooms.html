@@ -3,7 +3,7 @@
 <section class="rooms">
   <h2>Conheça nossas acomodações</h2>
   <div class="rooms__grid">
-    @for (room of rooms; track room.id) {
+    @for (room of rooms(); track room.id) {
       <article class="suite">
         <h3>{{ room.name }}</h3>
         <p>{{ room.description }}</p>
@@ -77,6 +77,9 @@
       <button type="submit" class="btn">Pedir orçamento</button>
       @if (event.sent) {
         <p class="events__ok">Pedido de orçamento registrado. Entraríamos em contato por e-mail.</p>
+      }
+      @if (event.error) {
+        <p class="events__ok">{{ event.error }}</p>
       }
     </form>
   </div>

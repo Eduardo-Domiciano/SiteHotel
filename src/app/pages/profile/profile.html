@@ -1,0 +1,102 @@
+<app-page-header />
+
+<section class="profile">
+  @if (loading()) {
+    <p>Carregando perfil…</p>
+  } @else {
+    <p class="profile__banner">Demonstração — conta de {{ form.name }}</p>
+
+    <div class="profile__grid">
+      <form class="card" (ngSubmit)="saveProfile()">
+        <h2>Meu perfil</h2>
+        <label>
+          Nome
+          <input
+            type="text"
+            [(ngModel)]="form.name"
+            name="name"
+            required
+            [attr.maxlength]="maxLen"
+          />
+        </label>
+        <label>
+          E-mail
+          <input type="email" [ngModel]="form.email" name="email" disabled />
+        </label>
+        <label>
+          Telefone
+          <input type="tel" [(ngModel)]="form.phone" name="phone" [attr.maxlength]="maxLen" />
+        </label>
+        <label>
+          Data de nascimento
+          <input type="date" [(ngModel)]="form.birthDate" name="birthDate" />
+        </label>
+        <button type="submit" class="btn">Salvar</button>
+      </form>
+
+      <form class="card" (ngSubmit)="savePassword()">
+        <h2>Senha</h2>
+        <label>
+          Senha atual
+          <input
+            type="password"
+            [(ngModel)]="password.current"
+            name="current"
+            required
+            [attr.maxlength]="maxLen"
+          />
+        </label>
+        <label>
+          Nova senha
+          <input
+            type="password"
+            [(ngModel)]="password.next"
+            name="next"
+            required
+            minlength="8"
+            [attr.maxlength]="maxLen"
+          />
+        </label>
+        <label>
+          Confirmar
+          <input
+            type="password"
+            [(ngModel)]="password.confirm"
+            name="confirm"
+            required
+            [attr.maxlength]="maxLen"
+          />
+        </label>
+        <button type="submit" class="btn">Alterar senha</button>
+      </form>
+    </div>
+
+    <section class="card reservations">
+      <h2>Minhas reservas</h2>
+      @if (reservations.length === 0) {
+        <p>Nenhuma reserva encontrada.</p>
+      } @else {
+        <ul>
+          @for (r of reservations; track r.id) {
+            <li>
+              <strong>{{ r.roomName }}</strong>
+              — check-in {{ r.checkIn }} → check-out {{ r.checkOut }} · R$ {{ r.total }} ·
+              {{ r.status }}
+            </li>
+          }
+        </ul>
+      }
+    </section>
+
+    @if (message) {
+      <p class="ok">{{ message }}</p>
+    }
+    @if (error) {
+      <p class="err">{{ error }}</p>
+    }
+
+    <div class="profile__logout">
+      <button type="button" class="btn" (click)="logout()">Sair</button>
+    </div>
+  }
+</section>

@@ -14,15 +14,35 @@
     </label>
     <label>
       Nome
-      <input type="text" [(ngModel)]="form.name" name="name" autocomplete="name" required />
+      <input
+        type="text"
+        [(ngModel)]="form.name"
+        name="name"
+        autocomplete="name"
+        required
+        [attr.maxlength]="maxLen"
+      />
     </label>
     <label>
       Telefone
-      <input type="tel" [(ngModel)]="form.phone" name="phone" autocomplete="tel" />
+      <input
+        type="tel"
+        [(ngModel)]="form.phone"
+        name="phone"
+        autocomplete="tel"
+        [attr.maxlength]="maxLen"
+      />
     </label>
     <label>
       E-mail
-      <input type="email" [(ngModel)]="form.email" name="email" autocomplete="email" required />
+      <input
+        type="email"
+        [(ngModel)]="form.email"
+        name="email"
+        autocomplete="email"
+        required
+        [attr.maxlength]="maxLen"
+      />
     </label>
     <label>
       Currículo

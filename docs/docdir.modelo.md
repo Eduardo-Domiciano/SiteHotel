@@ -3,6 +3,9 @@
 Copie este conteudo para um arquivo `docdir.md` dentro da pasta que quiser documentar.
 Troque os textos entre `<...>`. Remova secoes vazias.
 
+Modelo global do usuario: `~/.cursor/templates/docdir.modelo.md`  
+Em cada projeto, preferir manter uma copia em `docs/docdir.modelo.md`.
+
 ---
 
 # `<nome-da-pasta>`

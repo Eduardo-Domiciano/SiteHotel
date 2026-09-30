@@ -16,3 +16,4 @@ Codigo-fonte da aplicacao Angular.
 | Pasta | O que guarda |
 | --- | --- |
 | `app/` | Componentes, rotas, dados e logica do site. |
+| `environments/` | URLs de API por ambiente (dev/prod). |

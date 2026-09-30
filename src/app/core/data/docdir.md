@@ -1,6 +1,6 @@
 # data
 
-Dados estaticos do hotel usados nas paginas e no fluxo de reserva.
+Dados estaticos do hotel e da conta de demonstracao.
 
 ## Arquivos
 
@@ -8,8 +8,9 @@ Dados estaticos do hotel usados nas paginas e no fluxo de reserva.
 | --- | --- |
 | `hotel.ts` | Nome, contatos, galeria, comodidades, politicas, fundos de login e areas de carreira. |
 | `rooms.ts` | Lista dos 6 quartos, precos por ocupacao e funcoes de calculo de diaria. |
+| `demo-user.ts` | Conta Cleare Redfield, perfil e reserva de exemplo (29/09/2026). |
 | `docdir.md` | Documentacao desta pasta. |
 
 ## Observacoes
 
-- Nao ha API: tudo e hardcoded neste modulo.
+- Auth e perfil usam estes dados localmente; nao ha backend obrigatorio neste repo.

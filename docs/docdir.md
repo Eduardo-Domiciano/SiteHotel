@@ -11,4 +11,4 @@ Modelos e referencias de documentacao do projeto.
 
 ## Observacoes
 
-- A regra do Cursor em `.cursor/rules/docdir.mdc` aponta para este modelo.
+- A regra do Cursor (projeto e/ou global) aponta para este modelo ou para `~/.cursor/templates/docdir.modelo.md`.

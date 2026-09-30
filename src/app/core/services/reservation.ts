@@ -15,6 +15,7 @@ export class ReservationService {
   readonly selectedRooms = signal<SelectedRoom[]>([]);
   readonly confirmation = signal<string | null>(null);
   readonly error = signal<string | null>(null);
+  readonly submitting = signal(false);
 
   readonly nights = computed(() => {
     const start = this.checkIn();
@@ -75,25 +76,29 @@ export class ReservationService {
     );
   }
 
-  confirm(): boolean {
+  confirm(): void {
     this.error.set(null);
     if (!this.guestName() || !this.guestPhone() || !this.guestEmail()) {
       this.error.set('Preencha nome, telefone e e-mail.');
-      return false;
+      return;
     }
     if (!this.checkIn() || !this.checkOut()) {
       this.error.set('Informe check-in e check-out na barra de reservas.');
-      return false;
+      return;
     }
     if (this.selectedRooms().length === 0) {
       this.error.set('Escolha pelo menos um quarto.');
-      return false;
+      return;
     }
 
+    const total = this.total().toLocaleString('pt-BR', {
+      style: 'currency',
+      currency: 'BRL',
+    });
+    this.submitting.set(false);
     this.confirmation.set(
-      `Reserva registrada para ${this.guestName()}. A confirmação seria enviada para ${this.guestEmail()}.`,
+      `Reserva registrada para ${this.guestName()}. A confirmação foi enviada por e-mail para ${this.guestEmail()}. Total: ${total}.`,
     );
-    return true;
   }
 
   resetBooking(): void {

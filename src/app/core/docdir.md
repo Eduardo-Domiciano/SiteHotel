@@ -1,6 +1,6 @@
 # core
 
-Camada compartilhada: dados estaticos, tipos e servicos usados por varias paginas.
+Camada compartilhada: dados demo, modelos, servicos, guards, interceptors e sanitizacao.
 
 ## Arquivos
 
@@ -12,6 +12,9 @@ Camada compartilhada: dados estaticos, tipos e servicos usados por varias pagina
 
 | Pasta | O que guarda |
 | --- | --- |
-| `data/` | Listas e constantes do hotel (quartos, comodidades, textos). |
-| `models/` | Interfaces TypeScript (ex.: Room). |
-| `services/` | Servicos injetaveis (ex.: reserva). |
+| `data/` | Constantes locais (hotel, quartos, usuario demo). |
+| `models/` | Interfaces TypeScript (quarto e API). |
+| `services/` | Auth demo, API HTTP residual e estado de reserva. |
+| `guards/` | Guard de autenticacao. |
+| `interceptors/` | Interceptor que anexa Bearer token local. |
+| `utils/` | Sanitizacao e limites de campos. |
