@@ -1,12 +1,14 @@
 # Mikhalateia Hotel
 
-Site de **demonstração** (front Angular) de um hotel fictício em Varginha/MG. S quiser testar o projeto completo acesse [Site-Hotel-Completo](https://github.com/Eduardo-Domiciano/Site-Hotel-Completo)
+Site de **demonstração** (front Angular) de um hotel fictício em Varginha/MG.
 
-Demo: https://site-hotel-p9iqw31h6-eduardo-domicianos-projects.vercel.app/
+Programador geralmente nao sabe fazer interface, mas eu fiquei muito orgulhoso dessa!  [Demo](https://site-hotel-sage.vercel.app/)
 
-Projeto completo (front + API + Docker): repositório `Site-Hotel-Completo`.
+Projeto completo (front + API + Docker): repositório [Site-Hotel-Completo](https://github.com/Eduardo-Domiciano/Site-Hotel-Completo).
 
 ## Conta demo
+
+Ao entrar, abre o **perfil** com uma reserva de exemplo (check-in **29/09/2026**).
 
 | Campo | Valor |
 | --- | --- |
@@ -14,9 +16,7 @@ Projeto completo (front + API + Docker): repositório `Site-Hotel-Completo`.
 | E-mail | `cleare.redfield@mikhalateia.demo` |
 | Senha | `Redfield29` |
 
-Ao entrar, abre o **perfil** com uma reserva de exemplo (check-in **29/09/2026**).
-
-Campos de login/cadastro: no máximo **100** caracteres, com sanitização básica no cliente.
+Site emula um site de hotel com reservas de quartos e salões de eventos. Aqui ainda esta um projeto simples, mas o projeto final ja esta com uma interface mais avançada em relação as reservas e pagina de perfil. As imagens são ilustrativas para representar um hotel real, mas nao são de nenhum predio da cidade.
 
 ## Features
 
