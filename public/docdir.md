@@ -6,7 +6,10 @@ Arquivos publicos servidos na raiz do site (nao passam pelo compilador TypeScrip
 
 | Arquivo | O que faz |
 | --- | --- |
-| `favicon.ico` | Icone da aba do navegador. |
+| `favicon.svg` | Icone da aba: carinha de ET nas cores do site. |
+| `favicon.ico` | Fallback do icone para navegadores antigos. |
+| `favicon-32.png` | Icone PNG 32x32. |
+| `apple-touch-icon.png` | Icone para atalho no iOS. |
 | `mikhalateia-hotel.png` | Imagem de preview/screenshot do site. |
 | `docdir.md` | Documentacao desta pasta. |
 

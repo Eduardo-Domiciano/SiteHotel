@@ -8,7 +8,7 @@ Codigo-fonte da aplicacao Angular.
 | --- | --- |
 | `index.html` | HTML raiz: titulo, fontes e ponto de montagem `<app-root>`. |
 | `main.ts` | Bootstrap da aplicacao (`bootstrapApplication`). |
-| `styles.css` | Estilos globais, variaveis CSS e classe `.page-break`. |
+| `styles.css` | Estilos globais, variaveis CSS e a barra `.page-break` com o monograma MH. |
 | `docdir.md` | Documentacao desta pasta. |
 
 ## Subpastas

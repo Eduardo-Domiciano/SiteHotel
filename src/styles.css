@@ -55,8 +55,19 @@ textarea {
 }
 
 .page-break {
+  display: grid;
+  place-items: center;
   height: 3.5rem;
   background: var(--cream);
   border-top: 2px solid var(--terracotta);
   border-bottom: 2px solid var(--terracotta);
+}
+
+.page-break::before {
+  content: 'MH';
+  font-family: var(--title-font);
+  font-size: 2.4rem;
+  line-height: 1;
+  color: var(--terracotta);
+  letter-spacing: 0.04em;
 }
